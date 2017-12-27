@@ -26,9 +26,12 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: jekyll-text-theme
 plugins:
+  - jekyll-sitemap
   - jekyll-feed
+  - jekyll-paginate
+  - jemoji
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -41,3 +44,18 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+nav_lists:
+  - titles:
+      en: About
+      zh: 关于
+      zh-Hans: 关于
+      zh-Hant: 關於
+    url: /about.html
+
+## Paginate ##
+paginate: 5
+paginate_path: /blog/page:num
+
+## Development ##
+isdebug: false
